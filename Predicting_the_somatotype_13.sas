@@ -243,7 +243,7 @@ PROC LOGISTIC DATA=q1d ;
 	MODEL soma1= sex wtd9  wtd18  ht18 / LINK=GLOGIt aggregate scale=none ;
 RUn;
 
-/* if VIF above 5 or 10 -> multicollinearity high->  lower the precision of estimate of ß_i
+/* if VIF above 5 or 10 -> multicollinearity high->  lower the precision of estimate of ÃŸ_i
 now VIF < 5 
 */
 proc reg data=q1d;
